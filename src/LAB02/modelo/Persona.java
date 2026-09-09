@@ -35,6 +35,7 @@ public abstract class Persona {
 
     @Override
     public boolean equals(Object o) {
+        if(this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Persona persona = (Persona) o;
         return Objects.equals(nombre, persona.nombre) && Objects.equals(edad, persona.edad);
