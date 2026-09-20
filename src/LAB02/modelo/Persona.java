@@ -3,18 +3,18 @@ import java.util.Objects;
 
 public abstract class Persona {
     private String nombre;
-    private String edad;
+    private int edad;
 
-    public Persona(String edad, String nombre) {
+    public Persona(String nombre, int edad) {
         this.edad = edad;
         this.nombre = nombre;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
